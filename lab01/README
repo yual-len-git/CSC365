@@ -1,0 +1,9 @@
+CSC365 Lab01
+
+Manual Run
+
+python3 schoolsearch.py
+
+script Run
+
+bash studentsearch.sh

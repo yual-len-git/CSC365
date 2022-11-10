@@ -1,0 +1,32 @@
+a) Source:
+    https://www.kaggle.com/aayushmishra1512/fifa-2021-complete-player-data
+
+b)Brief Description:
+    Table player
+        - contains player id, name, nationality
+        - id and name as primary key
+
+    Table stats
+        - contain player id, age, overall, potential
+        - id as the foreign key
+
+    Table team
+        - contains name, position, team, goals
+        - name as the foreign key
+
+c)Challenges:
+    - I was not fully sure of how to group the data tables and had a hard time to make unique tables. For the
+      custom SQL table i used a composite key but it wouldn't allow for two different foreign keys.
+    - I spent a while trying to diagnose the CSV error but couldn't fix it.
+    - UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 3112: character maps to <undefined>
+    - I was only able to test insert made up data using the format of the csv.
+    - I included the csv I was trying to use. Im not sure why python couldnt parse through it as I tried to
+      change the unicode too.
+
+d)Non-trivial:
+    - To see the list of players
+        - select * players;
+    - To see list of player stats
+        - select * stats;
+    - To see a specific player
+        - select 'id' or 'name' from players;
